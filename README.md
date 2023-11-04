@@ -26,7 +26,6 @@
 
 ```bash
 src
-├── dist # the bundled project ready for production
 ├── src
 │   ├── assets # uses atomic design structure
 │   ├── components # smaller components that are reused such as AppBar
