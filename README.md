@@ -26,23 +26,22 @@
 
 ```bash
 src
-├── src
-│   ├── assets # uses atomic design structure
-│   ├── components # smaller components that are reused such as AppBar
-│   ├── context # UserContext for shared state/data -- would prefer to use redux toolkit or apollo reactive vars
-│   ├── data # data used to mock responses from API
-│   │   └── client.ts # assumed simple data structure for a client
-│   │   └── provider.ts # assumed simple data structure for provider
-│   ├── layouts # shared layouts that can be used by sections that have several pages with the same layout
-│   │── pages # full pages the user interacts with
-│   │   └── clientHomePage # the page for the client to create and confirm appointments with providers
-│   │   └── errorPage # simple error page if the error boundary is hit
-│   │   └── loginPage # placeholder login page to switch between user types (client, provider)
-│   │   └── providerHomePage # page for the provider to manage their availability
-│   │── utils # pure functions -- usually those we would repeat
-│   │── paths.ts # mapped to our routes, easier to maintain and ensures you use the right route
-│   │── router.tsx # browser router
-│   ├── types # shared types, enums, etc.
+├── assets # uses atomic design structure
+├── components # smaller components that are reused such as AppBar
+├── context # UserContext for shared state/data -- would prefer to use redux toolkit or apollo reactive vars
+├── data # data used to mock responses from API
+│   └── client.ts # assumed simple data structure for a client
+│   └── provider.ts # assumed simple data structure for provider
+├── layouts # shared layouts that can be used by sections that have several pages with the same layout
+│── pages # full pages the user interacts with
+│   └── clientHomePage # the page for the client to create and confirm appointments with providers
+│   └── errorPage # simple error page if the error boundary is hit
+│   └── loginPage # placeholder login page to switch between user types (client, provider)
+│   └── providerHomePage # page for the provider to manage their availability
+│── utils # pure functions -- usually those we would repeat
+│── paths.ts # mapped to our routes, easier to maintain and ensures you use the right route
+│── router.tsx # browser router
+├── types # shared types, enums, etc.
 ```
 
 ## Some decisions I made
